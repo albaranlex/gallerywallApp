@@ -1,34 +1,26 @@
 img {
   background-color: white;
-  height: 180px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
   filter: grayscale();
-  padding: 10px 10px 40px 10px;
-  border: 1px solid lightgrey;
+  border: 0px solid lightgrey;
   opacity: 60%;
 }
+h3 {
+  text-align: center;
+}
 
-div {
-  display: inline-block;
+#container {
   position: relative;
+  display: flex;
+  top: 20%;
+  left: 20%;
+  margin-top: 0;
+  width: 100px;
+  height: 100px;
 }
 
-.image01 {
-  transform: rotate(5deg) translate(80px, 150%);
-  z-index: 4;
-}
-
-.image02 {
-  transform: rotate(20deg) translate(-50px, 120%);
-  z-index: 3;
-}
-
-.image03 {
-  transform: rotate(10deg) translate(-200px, 100%);
-  z-index: 2;
-}
-
-.image04 {
-  transform: rotate(-20deg) translate(-550px, -50%);
-  z-index: 1;
+.image01:hover {
+  filter: none;
 }
