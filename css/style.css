@@ -28,7 +28,7 @@ img:hover {
 div img:not(#table) {
   height: 120px;
   box-shadow: -5px 5px 3px gray;
-  margin: 7px;
+  margin: 10px;
 }
 
 .box1,
