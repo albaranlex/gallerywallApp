@@ -1,5 +1,12 @@
+body {
+  background: url("../img/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
 .container {
-  margin: 100px;
+  margin: 80px 150px;
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,8 +16,7 @@
     ". box2 box2 box2 box2 box2 box2"
     "box3 box3 box3 box3 box3 box3 box3"
     ". box4 box4 box4 box4 . ."
-    ". box5 box5 box5 box5 . ."
-    "box6 box6 box6 box6 box6 box6 box6";
+    "box5 box5 box5 box5 box5 box5 box5";
 }
 
 img:hover {
@@ -19,58 +25,43 @@ img:hover {
   box-shadow: none;
 }
 
-.box1 {
-  grid-area: box1;
+div img:not(#table) {
+  height: 120px;
+  box-shadow: -5px 5px 3px gray;
+  margin: 7px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
   display: flex;
   justify-content: center;
 }
 
-.box1 img {
-  height: 150px;
-  box-shadow: -2px 5px 5px gray;
-  margin: 10px;
+.box1 {
+  grid-area: box1;
 }
 
 .box2 {
   grid-area: box2;
-  display: flex;
-  justify-content: center;
-}
-
-.box2 img {
-  height: 150px;
-  box-shadow: -2px 5px 5px gray;
-  margin: 10px;
 }
 
 .box3 {
   grid-area: box3;
-  display: flex;
-  justify-content: center;
-}
-
-.box3 img {
-  height: 150px;
-  box-shadow: -2px 5px 5px gray;
-  margin: 10px;
 }
 
 .box4 {
   grid-area: box4;
-  background-color: chartreuse;
 }
 
 .box5 {
   grid-area: box5;
-  background-color: yellow;
 }
 
-.box6 {
-  grid-area: box6;
-  align-self: center;
-  justify-self: center;
-}
-
-.box6 img {
+#table {
   height: 300px;
+  pointer-events: none;
+  transform: translate(40px, -30%);
 }
