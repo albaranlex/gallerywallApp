@@ -1,26 +1,48 @@
-img {
-  background-color: white;
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  filter: grayscale();
-  border: 0px solid lightgrey;
-  opacity: 60%;
-}
-h3 {
-  text-align: center;
-}
-
-#container {
-  position: relative;
-  display: flex;
-  top: 20%;
-  left: 20%;
-  margin-top: 0;
-  width: 100px;
-  height: 100px;
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . box1 box1 box1 ."
+    ". box2 box2 box2 box2 box2 box2"
+    "box3 box3 box3 box3 box3 box3 box3"
+    ". box4 box4 box4 box4 . ."
+    ". box5 box5 box5 box5 . ."
+    "box6 box6 box6 box6 box6 box6 box6";
 }
 
-.image01:hover {
-  filter: none;
+.box1 {
+  background-color: blue;
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: red;
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: brown;
+}
+
+.box4 {
+  grid-area: box4;
+  background-color: chartreuse;
+}
+
+.box5 {
+  grid-area: box5;
+  background-color: yellow;
+}
+
+.box6 {
+  grid-area: box6;
+  align-self: center;
+  justify-self: center;
+}
+
+.box6 img {
+  height: 300px;
 }
