@@ -3,4 +3,7 @@
 ### Notes:
 
 1. Screen Layout with CSS Grid & Flexbox.
-2. All images used in this page were copied from the internet and are not mine. All rights reserved to the owner of these images.
+
+Image Source:
+Touristic Minimalist Photography
+http://www.fubiz.net/2015/11/13/touristic-minimalist-photography/
